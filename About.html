@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | CamStacks</title>
+  <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/css.css">
+  <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+
+  <!-- NAV BAR -->
+  <nav class="main-nav">
+    <div class="container nav-flex">
+      <div class="nav-left">
+        <a href="index.html" class="brand">
+          <img src="IMAGES/Logo.png" alt="CamStacks Logo" class="nav-logo">
+          <span>CamStacks</span>
+        </a>
+      </div>
+      <button class="nav-toggle" onclick="toggleNav()">
+        <i class="fa fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="Home.html#home">Home</a></li>
+        <li><a href="Home.html#services">Services</a></li>
+        <li><a href="Home.html#portfolio">Portfolio</a></li>
+        <li><a href="Home.html#about">About</a></li>
+        <li><a href="Home.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ABOUT HERO -->
+ <!-- ABOUT HERO -->
+<section class="about-hero container section">
+  <div class="about-hero-flex">
+    <div class="about-text">
+      <h1>Hi, I’m Cameron Aulton</h1>
+      <p>I build <strong>websites</strong> and design <strong>databases</strong> that are user-friendly, efficient, and tailored to your needs.  
+      I help individuals, freelancers, and businesses bring their ideas online and organise information effectively.</p>
+    </div>
+    <div class="about-photo">
+      <img src="IMAGES/Cameron.jpg" alt="Cameron Aulton Photo">
+    </div>
+  </div>
+</section>
+
+
+  <!-- ABOUT DETAILS -->
+  <section class="what-i-do container section">
+  <div class="what-i-do-flex">
+    <div class="what-i-do-photo">
+      <img src="IMAGES/website.jpg" alt="Web Development and Databases">
+    </div>
+    <div class="what-i-do-text">
+      <h2>What I Do</h2>
+      <p>
+       I specialize in creating modern, responsive websites and designing robust, scalable databases tailored to your needs. I help individuals, freelancers, and businesses turn ideas into fully functional digital solutions—whether that’s a portfolio, an e-commerce platform, or a data-driven tool.
+
+I bring practical experience from working with real clients and teams, including a Python-based remote internship at First Derivative and a two-week international placement at Prisco Business Group in Braga, Portugal. These opportunities strengthened my skills in problem-solving, client communication, and project delivery.
+
+I focus on clean, user-friendly interfaces, efficient backend systems, and practical database structures that make managing information easy. From setting up relational databases and writing custom queries to developing responsive websites with a smooth user experience, I aim to deliver solutions that save time, reduce complexity, and empower my clients to succeed online.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- BAR EXPERIENCE -->
+<section class="about-bar container section">
+  <div class="about-flex">
+    <div class="bar-photo">
+      <img src="IMAGES/bar.jpg" alt="Cameron Working at a Bar">
+    </div>
+    <div class="bar-text">
+      <h2>Bar Work</h2>
+      <p>
+        I’ve been working at the bar since November 2024, initially alongside my supervisor role at Burger King until December. 
+        Since then, I’ve focused solely on bar work, which has helped me discover more about myself, build confidence, and form valuable connections. 
+        Managing a fast-paced environment and interacting with a wide range of people has strengthened my communication, teamwork, and problem-solving skills—abilities I bring to all areas of my life and work.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="about-transition container section">
+  <div class="transition-content">
+    <h2>Beyond Work & Code</h2>
+    <p> From professional life to personal passions, here’s a glimpse into what I enjoy outside of work and development.</p>
+  </div>
+</section>
+
+
+  <!-- KICKBOXING EXPERIENCE -->
+<section class="about-kickboxing container section">
+  <div class="kickboxing-flex">
+    <div class="kickboxing-photo">
+      <img src="IMAGES/kickboxing.jpg" alt="Cameron Kickboxing">
+    </div>
+    <div class="kickboxing-text">
+      <h2>Kickboxing & Combat Sports</h2>
+      <p>
+        I recently started kickboxing as a new hobby, but I’ve been passionate about boxing and combat sports for years. 
+        Since 2018, I’ve trained on and off—learning on my own, attending gyms, and following my love for boxing and UFC. 
+        Combat sports have taught me discipline, focus, and resilience, and I enjoy the challenge of continuously improving my skills.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Charity & Running Section -->
+<section class="about-charity container section">
+  <div class="about-flex">
+    <div class="charity-photo">
+      <img src="IMAGES/charity.jpg" alt="Cameron Participating in Charity Events">
+    </div>
+    <div class="charity-text">
+      <h2>Charity & Running</h2>
+      <p>
+        Giving back and staying active are important parts of my life. I’ve participated in a variety of events that push me physically while helping others, including:
+      </p>
+      <ul class="about-list">
+        <li>Abseiled down the Europa Hotel for Cancer Fund for Children</li>
+        <li>Bucket collections in Belfast and at Tesco stores for Cancer Fund for Children</li>
+        <li>Completed the Pretty Muddy Run and ran an additional 10k for Cancer Research</li>
+        <li>Completed the “10 Days of 5K” Challenge – October 2025 for Cancer Research</li>
+        <li>Marathon Relay – running the 6.8-mile leg from Montgomery Road to Boucher Road in May 2026 for Cancer Fund for Children</li>
+      </ul>
+      <p>
+        These experiences have strengthened my discipline, determination, and sense of community, and they continue to motivate me both personally and professionally.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Work With Me CTA -->
+<section class="work-with-me container section">
+  <h2>Ready to Get Started?</h2>
+  <p>Whether it’s a website, a database, or just an idea you want to explore, I’m here to help bring it to life.</p>
+  <a href="Home.html#contact" class="btn primary">Work With Me</a>
+</section>
+
+
+  <footer class="footer">
+    © <span id="year"></span> CamStacks — Web & Database Development
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

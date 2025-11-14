@@ -1,0 +1,155 @@
+/* CamStacks Main Stylesheet (without nav) */
+
+:root {
+  --bg: #06283D;
+  --card-bg: #0B3A53;
+  --text: #e6f1ff;
+  --accent: #4dd2ff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Layout Helpers */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 120px 0;
+}
+
+.hero h2 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #b8d4e3;
+  font-size: 18px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.actions {
+  margin-top: 30px;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 26px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text);
+  background: var(--card-bg);
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.2s;
+  border: 1px solid transparent;
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: #003246;
+  font-weight: 700;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+
+/* Sections */
+.section {
+  padding: 80px 0;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Cards */
+.grid {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 12px;
+  transition: 0.25s;
+  border: 1px solid transparent;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+.link {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* About */
+.list li {
+  margin-bottom: 8px;
+  color: #b8d4e3;
+}
+
+/* Contact */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #0e4c6e;
+  background: #07314a;
+  color: var(--text);
+  margin-top: 5px;
+}
+
+.contact-form label {
+  font-size: 14px;
+}
+
+.contact-form button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #003246;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #7aa5bd;
+  font-size: 14px;
+  margin-top: 40px;
+}

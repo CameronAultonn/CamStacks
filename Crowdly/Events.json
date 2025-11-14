@@ -1,0 +1,27 @@
+[
+    {
+      "name": "Community Festival",
+      "location": "Belfast",
+      "description": "Join us for a community festival in Belfast! With music performed by local artists as well as some surprises we have in store!.",
+      "date": "2025-04-15"
+    },
+    {
+      "name": "Local Music Night",
+      "location": "Omagh",
+      "description": "Come along and listen to our community's musical talent as well as have the chance to showcase your own talent as well!.",
+      "date": "2025-05-10"
+    }
+    {
+        "name": "Charity Run",
+        "location": "Newtownards",
+        "description": "Participate in our 5K Run in Londonderry Park to raise money for Cancer Fund For Children.",
+        "date": "2025-06-05"
+      },
+    {
+      "name": "Outdoor Movie Night",
+        "location": "LarLarne",
+        "description": "Join us for an exiting time of binging fun movies all night!.",
+        "date": "2025-07-16"
+    }
+  ]
+  

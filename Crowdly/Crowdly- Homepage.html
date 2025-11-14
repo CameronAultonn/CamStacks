@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home >> Crowdly</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">                        
+    <link rel="stylesheet" href="css/modal.css">  
+    <link rel="stylesheet" href="css/media.css"> 
+    <link rel="stylesheet" href="css/header and banner.css"> 
+    <link rel="stylesheet" href="css/Home Attributes.css">
+    <link rel="stylesheet" href="css/high-contrast.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="IMAGES/favicon.png">
+</head>
+<body>
+    <script src="SCRIPTS/Homepage.js"></script>
+    <script src="SCRIPTS/highcontrast.js"></script>
+    <nav>
+        <div class="logo-container">
+          <a href="Crowdly- Homepage.html">
+            <img src="IMAGES/Crowdly.png" alt="Crowdly Logo" class="logo">
+          </a>
+          <span class="logo-text">Join, Participate, Belong.</span>
+        </div>
+        <div id="logo-container2">
+          <img src="IMAGES/highcontrast.png" alt="Click me" onclick="toggleHighContrast()" style="cursor: pointer;">
+        </div>
+        
+        <div class="nav-center">
+          <label for="section-jump" class="visually-hidden">Jump to:</label>
+          <select id="section-jump" onchange="jumpToSection(this.value)">
+            <option disabled selected>Jump to...</option>
+            <option value="#featured-events">Featured Events</option>
+            <option value="#event-calendar">Event Calendar</option>
+            <option value="#community-stories">Community Stories</option>
+            <option value="#map">Event Map</option>
+          </select>
+        </div>
+        <ul>
+          <li><a href="Crowdly- Homepage.html">Home</a></li>
+          <li><a href="Crowdly - Events.html">Events</a></li>
+          <li><a href="Crowdly - Stories.html">Community Stories</a></li>
+          <li><a href="Crowdly - EventSubmission.html">Event Submission</a></li>
+          <li><a href="Crowdly - Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      
+    <header>
+        <div class="banner">
+            <div class="slideshow">
+                <img src="IMAGES/community.jpg" alt="community image" class="banner-image active">
+                <img src="IMAGES/Community-Events.jpg" alt="people at food truck" class="banner-image">
+                <img src="IMAGES/volunteering-group-of-people-holding-small-plants-892x595.jpg" alt="people volunteering" class="banner-image">
+                <img src="IMAGES/festival.jpg" alt="people at a festival" class="banner-image">
+            </div>
+            <div class="banner-text">
+                <h1>Welcome to Crowdly</h1>
+                <center> <p>Discover, Join, and Organize Events in Your Community </center> </p>
+                <a href="Crowdly - Events.html" class="cta-button">Find Your Next Event</a>
+            </div>
+        </div>
+    </header>
+
+    <hr class="section-divider">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <section id="featured-events">
+        <h2>Featured Events</h2>
+        <div class="events-container">
+            <div class="event-card">
+                <img src="IMAGES/communityfestival.jpg" alt="Community Festival">
+                <div class="event-info">
+                    <h3>Community Festival</h3>
+                    <p>Date: April 15, 2025</p>
+                    <p>Location: Belfast</p>
+                    <a href="CommunityFestivalEvent.html" class="event-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="event-card">
+                <img src="IMAGES/charityrun.jpg" alt="Charity Run">
+                <div class="event-info">
+                    <h3>Charity Run</h3>
+                    <p>Date: May 10, 2025</p>
+                    <p>Location: Newtownards</p>
+                    <a href="CharityRunEvent.html" class="event-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="event-card">
+                <img src="IMAGES/communitymusic.jpg" alt="Music Night">
+                <div class="event-info">
+                    <h3>Music Night</h3>
+                    <p>Date: June 5, 2025</p>
+                    <p>Location: Omagh</p>
+                    <a href="MusicNightEvent.html" class="event-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="event-calendar">
+        <h2>Upcoming Events</h2>
+        <p>Check out our calendar for upcoming events in your area.</p>
+        <div class="calendar-container">
+            <div class="calendar">
+                <div class="month">
+                    <span id="prev">&#10094;</span>
+                    <h3 id="month-year">March 2025</h3>
+                    <span id="next">&#10095;</span>
+                </div>
+                <div class="weekdays">
+                    <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+                </div>
+                <div class="days" id="calendar-days"></div>
+            </div>
+        </div>
+        <script src="SCRIPTS/calendarhome.js"></script>
+    
+<div id="event-modal" class="modal">
+    <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <h2 id="event-title"></h2>
+        <img id="event-image" src="" alt="Event Image" style="width: 100%; max-height: 300px; object-fit: cover; display: none;">
+        <p id="event-location"></p>
+        <p id="event-description"></p>
+    </div>
+</div>
+    </section>
+    
+    <hr class="section-divider">
+    
+    <section id="community-stories" class="homepage-section">
+        <h2>Inspiring Community Stories</h2>
+        <div class="story-cards">
+            <div class="story-card">
+                <img src="IMAGES/Mark.jpg" height = 80px alt="Story 1">
+                <h3>Finding a New Home: Mark's Journey to Belonging</h3>
+                <p>Mark felt isolated after moving, but a local sports club gave him community and purpose.</p>
+                <a href="Markstory.html" class="btn-read-more">Read More</a>
+            </div>
+            <div class="story-card">
+                <img src="IMAGES/lisa.jpg" alt="Story 2">
+                <h3>Volunteering Changed My Life: Lisa's Story of Giving Back</h3>
+                <p>Lisa started volunteering at the local food bank, and it deeply impacted her perspective on life and community.</p>
+                <a href="LisaStory.html" class="btn-read-more">Read More</a>
+            </div>
+            <div class="story-card">
+                <img src="IMAGES/bookclub.webp" alt="Story 3">
+                <h3>How Joining the Book Club Restored Sarah's Confidence</h3>
+                <p>Sarah overcame loneliness and anxiety by joining a book club, forming new friendships and rediscovering joy.</p>
+                <a href="sarahstory.html" class="btn-read-more">Read More</a>
+            </div>
+        </div>
+        <a href="Crowdly - Stories.html" class="btn-primary">View All Stories</a>
+    </section>
+    
+    <hr class="section-divider">
+
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<style>
+  #map {
+    height: 400px;
+    width: 100%;
+  }
+</style>
+
+<div class="map-container">
+    <div class="map-text">
+        <p>Find one of our many events here!</p>
+    </div>
+
+    <div id="map"></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+<script src="SCRIPTS/map.js"></script>
+<footer>
+    <p>&copy; 2025 Crowdly. All rights reserved.</p>
+    <div class="footer-container">
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="Crowdly- Homepage.html">Home</a></li>
+                <li><a href="Crowdly - Events.html">Events</a></li>
+                <li><a href="Crowdly - Stories.html">Community Stories</a></li>
+                <li><a href="Crowdly - EventSubmission.html">Event Submission</a></li>
+                <li><a href="Crowdly - Contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<div class ="Social-media">
+<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+<a href="https://www.twitter.com" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com" class="fa fa-instagram"></a>
+</div>
+
+
+<div class="policy-buttons">
+<a href="PrivacyPolicy.html">
+    <button id="view-privacy-policy">View Privacy Policy</button>
+</a>
+
+<a href="termsandconditions.html">
+    <button id="view-terms-conditions">View Terms and Conditions</button>
+</a>
+
+<a href="cookiespolicy.html">
+    <button id="view-cookies">View Cookies Policy</button>
+</a>
+</div>
+</div>
+
+</footer>
+<button id="backToTop" title="Back to Top" onclick="scrollToTop()">
+    <i class="fa fa-arrow-up"></i>
+  </button>
+</body>
+    <div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background: #222; color: white; text-align: center; padding: 10px; display: none;">
+        This website uses cookies to improve your experience. 
+        <button onclick="acceptCookies()">Accept</button>
+    </div>
+</html>

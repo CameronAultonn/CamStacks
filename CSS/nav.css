@@ -1,0 +1,141 @@
+/* NAVBAR */
+.main-nav {
+    background: url('../IMAGES/header.png');
+    background-size: 300px 300px; /* adjust based on image size */
+    background-repeat: repeat;
+    background-position: center;
+    backdrop-filter: blur(6px);
+    padding: 18px 0;   /* taller to fit larger logo */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+/* Nav Bar Styles */
+
+.header {
+  padding: 20px 0;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--accent);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 42px;
+}
+
+nav a {
+  color: var(--text);
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 15px;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  opacity: 1;
+  color: var(--accent);
+}
+
+
+  .nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo container */
+  .nav-left .brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--accent);
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  /* LOGO IMAGE FIXES */
+  .nav-logo {
+    height: 70px;           /* Bigger, visible logo */
+    width: auto;
+    object-fit: contain;    /* Removes forced distortion */
+    object-position: center;
+    margin: -10px 0;        /* Cancels out thick padding inside your image */
+  }
+  
+  /* Nav links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 16px;
+    opacity: 0.85;
+    transition: 0.2s;
+  }
+  
+  .nav-links a:hover {
+    opacity: 1;
+    color: var(--accent);
+  }
+  
+  /* Mobile toggle */
+  .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 26px;
+    cursor: pointer;
+  }
+  
+  /* Mobile layout */
+  @media (max-width: 750px) {
+    .nav-links {
+      position: absolute;
+      top: 75px;
+      right: 0;
+      background: var(--card-bg);
+      flex-direction: column;
+      padding: 20px;
+      border-radius: 0 0 0 12px;
+      display: none;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+  
+    /* Slightly reduce logo size on mobile */
+    .nav-logo {
+      height: 55px;
+      margin: -6px 0;
+    }
+  }
+  

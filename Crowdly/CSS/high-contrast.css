@@ -1,0 +1,143 @@
+body.high-contrast {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.high-contrast a,
+.high-contrast a:visited,
+body.high-contrast .back-link {
+  color: #ff0 !important;
+}
+
+body.high-contrast .back-link:hover {
+  color: #cc0 !important;
+}
+
+body.high-contrast .logo-text,
+body.high-contrast .banner-text,
+body.high-contrast #community-stories h2,
+body.high-contrast #event-calendar h2,
+body.high-contrast #event-calendar p,
+body.high-contrast .month span,
+body.high-contrast .weekdays,
+body.high-contrast .event2-info p,
+body.high-contrast .event-info p,
+body.high-contrast .description-text,
+body.high-contrast .story-card p,
+body.high-contrast .story-section p,
+body.high-contrast .close {
+  color: #fff !important;
+}
+
+body.high-contrast .cta-button,
+body.high-contrast .event2-btn,
+body.high-contrast .btn-read-more,
+body.high-contrast .btn-primary,
+body.high-contrast .event-btn,
+body.high-contrast .read-more,
+body.high-contrast .view-all{
+  background-color: #ff0 !important;
+  color: #000 !important;
+}
+
+body.high-contrast .event2-btn:hover,
+body.high-contrast .btn-read-more:hover,
+body.high-contrast .btn-primary:hover,
+body.high-contrast .event-btn:hover,
+body.high-contrast .read-more:hover,
+body.high-contrast .view-all:hover {
+  background-color: #cc0 !important;
+}
+
+body.high-contrast h3,
+body.high-contrast .story-card h2,
+body.high-contrast hr,
+body.high-contrast h2,
+body.high-contrast #event-calendar h2,
+body.high-contrast #community-stories h2{
+  color: #ff0 !important;
+}
+
+body.high-contrast .event2-card,
+body.high-contrast .story-card,
+body.high-contrast .event-card {
+  background-color: #333 !important;
+  color: #fff !important;
+}
+
+body.high-contrast .event2-card img,
+body.high-contrast .event-card img {
+  border: 2px solid #fff !important;
+}
+
+body.high-contrast .modal-content,
+body.high-contrast .calendar-container,
+body.high-contrast .map-text,
+body.high-contrast .contact-info,
+body.high-contrast .contact-form,
+body.high-contrast .story-card,
+body.high-contrast input {
+  background-color: #333 !important;
+  color: #fff !important;
+}
+
+body.high-contrast header,
+body.high-contrast nav,
+body.high-contrast footer,
+body.high-contrast .info-container,
+body.high-contrast .ready-to-start,
+body.high-contrast .story-section,
+body.high-contrast #featured-events,
+body.high-contrast .events-container,
+body.high-contrast .map-container,
+body.high-contrast .map-box,
+body.high-contrast #event-calendar,
+body.high-contrast #community-stories,
+body.high-contrast .locations div {
+  background-color: #000 !important;
+  color: #fff !important;
+  border: 1px solid #fff;
+}
+
+body.high-contrast .section-divider {
+  background-color: #fff !important;
+}
+
+body.high-contrast #myInput::placeholder {
+  color: #ccc !important;
+}
+
+body.high-contrast .day {
+  background-color: #333 !important;
+  color: #fff !important;
+}
+
+body.high-contrast .day:hover,
+body.high-contrast .event-day {
+  background-color: #ff0 !important;
+  color: #000 !important;
+}
+
+body.high-contrast .month span:hover {
+  color: #ff0 !important;
+}
+
+#contrast-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 9999;
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #222;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contrast-toggle:hover {
+  background-color: #444;
+}
+

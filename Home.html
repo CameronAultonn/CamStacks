@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/css.css">
+  <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <nav class="main-nav">
+    <div class="container nav-flex">
+      
+      <div class="nav-left">
+        <a href="#home" class="brand">
+          <img src="IMAGES/Logo.png" alt="CamStacks Logo" class="nav-logo">
+          <span>CamStacks</span>
+        </a>
+      </div>
+  
+      <button class="nav-toggle" onclick="toggleNav()">
+        <i class="fa fa-bars"></i>
+      </button>
+  
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+  
+    </div>
+  </nav>
+
+  <section id="home" class="hero container">
+    <h2>Websites & Databases That Perform.</h2>
+    <p>I build fast, modern websites and strong database architectures designed for growth.</p>
+    <div class="actions">
+      <a href="#contact" class="btn primary">Work With Me</a>
+      <a href="#portfolio" class="btn">View Portfolio</a>
+    </div>
+  </section>
+
+  <section id="services" class="container section">
+    <h2>Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Website Development</h3>
+        <p>Clean, responsive sites using modern HTML, CSS, JavaScript, and frameworks.</p>
+      </div>
+      <div class="card">
+        <h3>Database Design</h3>
+        <p>Schema planning, DB optimization, migrations, and long-term data scaling.</p>
+      </div>
+      <div class="card">
+        <h3>API & Backend</h3>
+        <p>Custom APIs, authentication, dashboards, integrations, and admin tools.</p>
+      </div>
+      <div class="card">
+        <h3>Maintenance & Security</h3>
+        <p>Site updates, monitoring, performance optimization, and security hardening.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="container section">
+    <h2>Portfolio</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Crowdly</h3>
+        <p>A website created for a university project, centered around community engagement</p>
+        <a href="Crowdly/Crowdly- Homepage.html" class="btn">View My Previous Site</a>
+      </div>
+      <div class="card">
+        <h3>Schema Studio</h3>
+        <p>Database visualization and migration tooling for teams.</p>
+        <a href="#" class="link">View</a>
+      </div>
+      <div class="card">
+        <h3>ShopFlow</h3>
+        <p>E-commerce prototype with inventory syncing and admin controls.</p>
+        <a href="#" class="link">View</a>
+      </div>
+    </div>
+  </section>
+
+ <section id="about" class="container section">
+  <h2>About Me</h2>
+  <p>
+    Hi, I’m Cameron Aulton. I build <strong>websites</strong> and design <strong>databases</strong> that are user-friendly, efficient, and tailored to your needs. 
+    I help individuals, freelancers, and businesses bring their ideas online and organise information effectively.
+  </p>
+  <ul class="list">
+    <li>Custom website development for portfolios, small businesses, and projects</li>
+    <li>Relational database design and report creation with SQL Server</li>
+    <li>Problem-solving and user-focused solutions</li>
+    <li>Professional, practical, and easy-to-use digital solutions</li>
+  </ul>
+<a href="About.html" class="btn primary">Read More</a>
+</section>
+
+
+  <section id="contact" class="container section">
+    <h2>Contact</h2>
+    <form class="contact-form">
+      <label>Name
+        <input type="text" placeholder="Your name" required />
+      </label>
+      <label>Email
+        <input type="email" placeholder="your@email.com" required />
+      </label>
+      <label>Message
+        <textarea rows="5" placeholder="Tell me about your project..." required></textarea>
+      </label>
+      <button type="submit" class="btn primary">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    © <span id="year"></span> CamStacks — Web & Database Development
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

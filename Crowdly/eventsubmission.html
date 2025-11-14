@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/event.css">
+    <link rel="stylesheet" href="EventLocationSearch.js">
+    <link rel="stylesheet" href="css/high-contrast.css">
+    <link rel="stylesheet" href="css/submission.css">
+    <link rel="icon" type="image/png" href="IMAGES/favicon.png">
+    <script src="SCRIPTS/highcontrast.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="logo-container">
+      <a href="Crowdly- Homepage.html">
+        <img src="IMAGES/Crowdly.png" alt="Crowdly Logo" class="logo">
+      </a>
+      <span class="logo-text">Join, Participate, Belong.</span>
+    </div>
+    <div id="logo-container3">
+        <img src="IMAGES/highcontrast.png" alt="Click me" onclick="toggleHighContrast()" style="cursor: pointer;">
+    </div>
+    <ul>
+      <li><a href="Crowdly- Homepage.html">Home</a></li>
+      <li><a href="Crowdly - Events.html">Events</a></li>
+      <li><a href="Crowdly - Stories.html">Community Stories</a></li>
+      <li><a href="#submission">Event Submission</a></li>
+      <li><a href="Crowdly - Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+    <section>
+      <h2>Event Submission</h2>
+      <p>Got an idea for a community event? We’d love to hear it! Share your idea below, and we’ll review it to see how we can help make it happen together.</p>
+    </section>
+    
+    <section class="event-submission" id="submission">
+      <h2>Bring Your Idea to Life</h2>
+      <p class="form-intro">Be a voice in your community—submit your event below!</p>
+    
+      <form id="eventForm">
+        <div class="form-group">
+          <label for="location">Event Town:</label>
+          <input list="locations" id="location" name="location" placeholder="Start typing..." required>
+          <datalist id="locations">
+            <option value="Omagh">
+            <option value="Larne">
+            <option value="Belfast">
+            <option value="Londonderry">
+            <option value="Newtownards">
+          </datalist>
+          
+          </select>
+        </div>
+    
+        <div class="form-group">
+          <label for="address">Event Address:</label>
+          <input type="text" id="address" name="address" placeholder="e.g. 123 Main St, Community Hall..." autocomplete="street-address" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="postcode">Postcode:</label>
+          <input type="text" id="postcode" name="postcode" placeholder="e.g. BT78 1XX" autocomplete="postal-code" required>
+        </div>
+        
+
+        <div class="form-group">
+          <label for="eventName">Event Name:</label>
+          <input type="text" id="eventName" name="eventName" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="date">Event Date:</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+    
+        <div class="time-row">
+          <div class="form-group">
+            <label for="startTime">Start Time:</label>
+            <input type="time" id="startTime" name="startTime" required>
+          </div>
+        
+          <div class="form-group">
+            <label for="duration">Duration (hrs):</label>
+            <input type="number" id="duration" name="duration" min="0" step="0.5" placeholder="e.g. 1.5" required>
+          </div>
+        </div>
+        
+
+        <div class="form-group">
+          <label for="price">Event Price (£):</label>
+          <input type="number" id="price" name="price" placeholder="e.g. 10.00" min="0" step="0.01" required>
+        </div>
+        
+
+        <div class="form-group">
+          <label for="details">Event Details:</label>
+          <textarea id="details" name="details" rows="4" placeholder="Enter event details here..." required></textarea>
+        </div>
+    
+        <div class="form-group">
+          <label for="essentials">What people should bring (optional):</label>
+          <textarea id="essentials" name="essentials" rows="4" placeholder="Enter details here..." ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="reason">Why should people participate?:</label>
+          <textarea id="reason" name="reason" rows="4" placeholder="Enter reason here..." ></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Event</button>
+      </form>
+      
+      <div id="responseMessage" style="text-align:center; margin-top: 1rem;"></div>
+
+      
+      <ul id="eventList"></ul>
+    </section>
+    
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Crowdly. All rights reserved.</p>
+    <div class="footer-container">
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="Crowdly- Homepage.html">Home</a></li>
+                <li><a href="Crowdly - Events.html">Events</a></li>
+                <li><a href="Crowdly - Stories.html">Community Stories</a></li>
+                <li><a href="Crowdly - EventSubmission.html">Event Submission</a></li>
+                <li><a href="Crowdly - Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    <!-- Icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Font awesome icons -->
+<div class ="Social-media">
+<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+<a href="https://www.twitter.com" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com" class="fa fa-instagram"></a>
+</div>
+
+
+<div class="policy-buttons">
+<a href="PrivacyPolicy.html">
+    <button id="view-privacy-policy">View Privacy Policy</button>
+</a>
+
+<a href="termsandconditions.html">
+    <button id="view-terms-conditions">View Terms and Conditions</button>
+</a>
+
+<a href="cookiespolicy.html">
+    <button id="view-cookies">View Cookies Policy</button>
+</a>
+</div>
+</div>
+
+</footer>
+  
+  <!-- Link to the external JavaScript file -->
+  <script src="SCRIPTS/submission.js"></script>
+</body>
+</html>
